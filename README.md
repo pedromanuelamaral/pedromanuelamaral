@@ -65,6 +65,7 @@ Personal Mental Health Series:
 
 | Essay | Language | |
 |---|---|---|
+| Violence, The Sacred And The Inhumane | English | [Read](https://docs.google.com/document/d/15q-khtusF4dW7ljITP-GnG_LKdyyOlCvAUqaOSLYShI/edit?usp=sharing) |
 | A World of Mayhem or A New War Frontier: The Ethics of AI in Warfare | English | [Read](https://docs.google.com/document/d/1SJpT2ubArFb9MWeMcKDBePfkT342lmjqCyq6tWS4PuQ/edit) |
 | Policiamento Preditivo e Liberdades Civis: Paradoxos da Quarta Emenda | Portuguese | [Read](https://docs.google.com/document/d/1sxUmLLcSSrXtPg-j4rzgWCU6aYMT_IB1KDFhsPZvz74/edit) |
 | A Infindável Batalha Entre a Chama da Vida e o Fogo Fátuo | Portuguese | [Read](https://docs.google.com/document/d/1y78yaHJNImRKNyyOkXNEHEDcH7QS7FBvwfijkY-G-bs/edit) |
@@ -122,6 +123,7 @@ Série sobre a Minha Saúde Mental:
 
 | Ensaio | Língua | |
 |---|---|---|
+| Violência, O Sagrado E O Desumano | Inglês | [Ler](https://docs.google.com/document/d/15q-khtusF4dW7ljITP-GnG_LKdyyOlCvAUqaOSLYShI/edit?usp=sharing) |
 | Um Mundo de Caos ou Uma Nova Fronteira de Guerra: A Ética da IA na Guerra | Inglês | [Ler](https://docs.google.com/document/d/1SJpT2ubArFb9MWeMcKDBePfkT342lmjqCyq6tWS4PuQ/edit) |
 | Policiamento Preditivo e Liberdades Civis: Paradoxos da Quarta Emenda | Português | [Ler](https://docs.google.com/document/d/1sxUmLLcSSrXtPg-j4rzgWCU6aYMT_IB1KDFhsPZvz74/edit) |
 | A Batalha Infinita Entre a Chama da Vida e o Fogo Fátuo | Português | [Ler](https://docs.google.com/document/d/1y78yaHJNImRKNyyOkXNEHEDcH7QS7FBvwfijkY-G-bs/edit) |
