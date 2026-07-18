@@ -6,12 +6,13 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 
 <div align="left">
   
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/pedromanuelamaral)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github)](https://github.com/pedromanuelamaral)
 [![X.com](https://img.shields.io/badge/-000000?style=flat-square&logo=x)](https://x.com/thephiloinvest)
 [![Devpost](https://img.shields.io/badge/Devpost-000000?style=flat-square&logo=devpost)](https://devpost.com/pedromanuelamaral)
-[![Reads](https://img.shields.io/badge/Devpost-000000?style=flat-square&logo=substack)](https://substack.com/@pedromanuelamaral)
+[![Reads](https://img.shields.io/badge/Read-000000?style=flat-square&logo=substack)](https://substack.com/@pedromanuelamaral)
 [![Discord](https://img.shields.io/badge/-000000?style=flat-square&logo=discord)](https://discord.com/users/1412836613142347887)
-[![Cinema](https://img.shields.io/badge/Cinema-181717?style=flat-square&logo=letterboxd)](https://letterboxd.com/Pedroamaral/)
+[![Cinema](https://img.shields.io/badge/Cinema-000000?style=flat-square&logo=letterboxd)](https://letterboxd.com/Pedroamaral/)
+[![HuggingFace](https://img.shields.io/badge/-000000?style=flat-square&logo=huggingface)](https://huggingface.co/Pedroamaral)
 
 </div>
 
@@ -23,7 +24,7 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 
 **Sketchbook:**
 - **Arta AI** (unfinished): Cerebras-Gemma 4 24-hour Hackathon build of a private AI Art Curator • [Repo](https://github.com/pedromanuelamaral/arta.ai)
-- **Model Card AI CV**: Interactive fun model-card style résumé • [Repo](https://github.com/pedromanuelamaral/model-card)
+- **Model Card AI CV**: Interactive fun model-card style profile • [Repo](https://github.com/pedromanuelamaral/model-card)
 - **My Fitness:** Hub for all my workouts and fitness • [Repo](https://github.com/pedromanuelamaral/my-fitness)
 
 **Currently Building:**
@@ -33,5 +34,5 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 - **Amaral Media Archive**: Open-source media archive of mental health & literature.
 
 **Side-Quests on Loop:**
-- AI and Code • [Fav Shorts](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8)
+- AI and Code • Fav [Shorts](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8) & [Longs](https://www.youtube.com/playlist?list=PLJJHqjpANJlA)
 - Spoken Poetry • [Amaral Media](https://open.spotify.com/show/2WSTZnuoQm04HFD8TA1Sid?si=bbf9834cefe247fc)
