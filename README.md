@@ -28,7 +28,7 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 - **My Fitness:** Hub for all my workouts and fitness • [Repo](https://github.com/pedromanuelamaral/my-fitness)
 
 **Currently Building:**
-- **Mentally** (Side-quest Project).
+- **Mentally Here:** Personal Mental Health Companion • [Repo](https://github.com/pedromanuelamaral/mentally-here)
 - **Singularity** (Hackathon Project).
 - **Assist-OS** (Hackathon Project).
 - **Amaral Media Archive**: Open-source media archive of mental health & literature.
