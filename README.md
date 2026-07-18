@@ -1,6 +1,6 @@
 # Pedro Manuel Amaral
 
-Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch.
+Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch ([more](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/READ-MORE.md)).
 
 ## Projects
 
@@ -36,3 +36,4 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 **Side-Quests on Loop:**
 - AI and Code • Fav [Shorts](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8) & [Longs](https://www.youtube.com/playlist?list=PLJJHqjpANJlA)
 - Spoken Poetry • [Amaral Media](https://open.spotify.com/show/2WSTZnuoQm04HFD8TA1Sid?si=bbf9834cefe247fc)
+- Attending AI Events [Luma](https://luma.com/user/pedroamaral) • [Cerebral Valley](https://cerebralvalley.ai/u/Pedroamaral20)
