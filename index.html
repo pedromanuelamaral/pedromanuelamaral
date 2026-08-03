@@ -1,0 +1,2800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; font-src data:; img-src 'self' data:; connect-src 'none'; frame-src 'none';">
+  <meta name="description" content="Pedro Amaral Model Card Résumé">
+  <title>Model Card</title>
+  
+  <style>
+    /* ----------------------------------------------------
+       design-taste-frontend: v2 (experimental)
+       DESIGN_VARIANCE: 7
+       MOTION_INTENSITY: 6
+       VISUAL_DENSITY: 4
+       ---------------------------------------------------- */
+
+    /* ----------------------------------------------------
+       1. FONTS & DESIGN SYSTEM
+       ---------------------------------------------------- */
+    @font-face {
+      font-family: 'JetBrains Mono';
+      src: url('data:font/woff2;base64,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') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    
+    :root {
+      /* Palette 2026 */
+      --bg-primary: #f9f4f0;
+      --bg-card: #fefbf9;
+      --border-color: #ebe5e1;
+      --accent-blue: #1a1a1a;
+      --accent-blue-glow: rgba(0, 0, 0, 0.08);
+      --cream-accent: #1a1a1a;
+      --text-main: #000000;
+      --text-muted: #666666;
+      --text-dark: #000000;
+      --font-heading: 'JetBrains Mono', monospace;
+      --font-body: -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    /* High Contrast Accessibility Overrides */
+    @media (prefers-contrast: more) {
+      :root {
+        --bg-primary: #000000;
+        --bg-card: #080d1a;
+        --text-main: #ffffff;
+        --text-muted: #f3f4f6;
+        --border-color: #ffffff;
+        --accent-blue: #2563eb;
+        --accent-blue-glow: rgba(37, 99, 235, 0.6);
+      }
+      .bar-container, .expert-card, .model-header, .tab-content, .metric-card, .terminal-container {
+        border-width: 2px !important;
+        border-color: #ffffff !important;
+      }
+      a {
+        color: #ffffff !important;
+        text-decoration: underline !important;
+      }
+    }
+
+    /* Motion Reduction Accessibility Overrides */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-delay: 0s !important;
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior: auto !important;
+      }
+      .router-node::before {
+        animation: none !important;
+      }
+    }
+
+    /* ----------------------------------------------------
+       2. RESET & BASE STYLES
+       ---------------------------------------------------- */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Spectrum top border bar removed per design update */
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    a:hover {
+      text-shadow: none;
+      color: #444444;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--cream-accent);
+      margin-bottom: 0.5em;
+    }
+
+    /* Inline SVG Icon Styling */
+    .icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      stroke-width: 1.5;
+      color: currentColor;
+    }
+
+    .tab-btn .icon, .badge .icon {
+      margin-right: 6px;
+    }
+
+    h3 .icon {
+      margin-right: 8px;
+    }
+
+    /* ----------------------------------------------------
+       3. LAYOUT & COMPONENTS
+       ---------------------------------------------------- */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Header styling */
+    .model-header {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .model-header::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, var(--accent-blue-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .repo-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .owner {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .model-id {
+      color: var(--cream-accent);
+      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
+
+    .tag {
+      background-color: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .tag.license {
+      border-color: #f59e0b;
+      color: #fbbf24;
+    }
+
+    .tag.moe {
+      border-color: var(--accent-blue);
+      color: #1a1a1a;
+    }
+
+    .tag.philosophy {
+      border-color: #10b981;
+      color: #047857;
+    }
+
+    .header-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 16px;
+    }
+
+    .contact-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .badge:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--accent-blue-glow);
+    }
+
+    /* Tactile Press Feedback */
+    .badge:active, .btn:active, .tab-btn:active, .preset-tag:active, .expert-card:active {
+      transform: scale(0.97) translateY(0);
+      transition: transform 0.05s ease;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .toc-title {
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      padding: 0;
+      align-items: center;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    .toc-item:not(:last-child)::after {
+      content: '/';
+      margin-left: 16px;
+      color: var(--border-color);
+    }
+
+    .toc-link {
+      color: var(--text-muted);
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toc-link span {
+      color: var(--accent-blue);
+      font-weight: 700;
+    }
+
+    .toc-link:hover {
+      color: var(--cream-accent);
+      text-shadow: 0 0 8px var(--accent-blue-glow);
+    }
+
+    /* Main Content Sections */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .content-section {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      scroll-margin-top: 24px; /* Align scroll targets nicely */
+    }
+
+    /* ----------------------------------------------------
+       4. SUMMARY TAB STYLES
+       ---------------------------------------------------- */
+    .lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-weight: 300;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .metric-card {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: var(--transition-fast);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px var(--accent-blue-glow);
+    }
+
+    .metric-value {
+      font-family: var(--font-mono);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cream-accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .summary-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .summary-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card-pane {
+      background-color: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .card-pane h3 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .capabilities-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .capabilities-list li {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .capabilities-list li::before {
+      content: '▪';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 0.85rem;
+      color: var(--accent-blue);
+    }
+
+    .essay-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .essay-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-primary);
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      transition: var(--transition-fast);
+    }
+
+    .essay-item:hover {
+      border-color: var(--accent-blue);
+      transform: translateX(4px);
+    }
+
+    .essay-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* ----------------------------------------------------
+       5. ARCHITECTURE & MOE VISUALIZER STYLES
+       ---------------------------------------------------- */
+    .moe-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+
+    .moe-visualizer {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 16px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 380px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .moe-visualizer {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+    }
+
+    .canvas-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .router-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .router-node {
+      background-color: var(--bg-card);
+      border: 2px solid var(--border-color);
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: var(--transition-normal);
+      position: relative;
+    }
+
+    .router-node::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.08);
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    @keyframes rotateGrad {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .router-node h4 {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+      font-family: var(--font-mono);
+    }
+
+    .router-node span {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-family: var(--font-mono);
+    }
+
+    .experts-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      z-index: 2;
+    }
+
+    @media (max-width: 580px) {
+      .experts-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .expert-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 10px 14px;
+      transition: var(--transition-normal);
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .expert-card:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-2px);
+    }
+
+    .expert-card.active {
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 15px var(--accent-blue-glow);
+      background-color: var(--accent-blue-glow);
+    }
+
+    .expert-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0;
+    }
+
+    .expert-card .expert-params {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .expert-card.active .expert-params {
+      color: var(--accent-blue);
+    }
+
+    .expert-card ul {
+      list-style: none;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .expert-card.active ul {
+      color: var(--text-main);
+    }
+
+    .expert-card ul li::before {
+      content: '▪ ';
+      color: var(--accent-blue);
+    }
+
+    .expert-card.active ul li::before {
+      color: var(--accent-blue);
+    }
+
+
+
+    .preset-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .preset-tag {
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      user-select: none;
+    }
+
+    .preset-tag:hover {
+      border-color: var(--accent-blue);
+      color: var(--text-main);
+    }
+    
+    .preset-tag:focus-visible {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: 2px;
+    }
+
+    .preset-tag.active {
+      border-color: var(--accent-blue);
+      color: var(--text-main);
+      background-color: rgba(0, 0, 0, 0.06);
+      font-weight: 500;
+    }
+
+    /* ----------------------------------------------------
+       6. TRAINING DATA TAB STYLES
+       ---------------------------------------------------- */
+    .training-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .training-section h3 {
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .grade-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 140px;
+      overflow-y: auto;
+      padding: 2px;
+    }
+
+    .grade-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-width: 200px;
+      background-color: rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.2;
+      transform: rotate(-0.4deg);
+    }
+
+    .grade-chip:nth-child(even) {
+      transform: rotate(0.3deg);
+    }
+
+    .grade-chip:nth-child(3n) {
+      transform: rotate(-0.2deg);
+    }
+
+    .grade-chip strong {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: #10b981;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      width: 2px;
+      height: calc(100% - 15px);
+      background-color: var(--border-color);
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--accent-blue);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--accent-blue-glow);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+
+    .timeline-title {
+      font-size: 1.15rem;
+      color: var(--cream-accent);
+    }
+
+    .timeline-period {
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-desc strong {
+      color: var(--text-main);
+    }
+
+    .vocab-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .vocab-tag {
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      color: #1a1a1a;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+    }
+
+    /* ----------------------------------------------------
+       7. EVALUATION BENCHMARKS (ALWAYS VISIBLE)
+       ---------------------------------------------------- */
+    .benchmarks-section {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .benchmarks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .benchmark-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .benchmark-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+    }
+
+    .benchmark-name {
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .benchmark-score {
+      font-weight: 700;
+      color: var(--cream-accent);
+    }
+
+    .bar-container {
+      width: 100%;
+      height: 3px;
+      position: relative;
+      margin-top: 6px;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: var(--accent-blue);
+      border-radius: 2px;
+      width: 0%;
+      transition: width 1.2s cubic-bezier(0.1, 0.8, 0.25, 1);
+    }
+
+    .benchmark-row:hover .bar-fill {
+      background: #333333;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .special-score {
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    /* ----------------------------------------------------
+       8. NEURAL NETWORK / CHAT TERMINAL
+       ---------------------------------------------------- */
+    .sandbox-section {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .sandbox-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+
+
+    .sandbox-stats {
+      display: flex;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .sandbox-stats strong {
+      color: var(--cream-accent);
+    }
+
+    .live-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #047857;
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+
+    .live-indicator::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: #10b981;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    .terminal-container {
+      background-color: transparent;
+      border: none;
+      padding: 16px 0 0 0;
+      position: relative;
+      overflow: hidden;
+      margin-top: 16px;
+    }
+
+    .terminal-container::before {
+      display: none;
+    }
+
+    .terminal-output {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--text-main);
+      white-space: pre-wrap;
+      word-break: break-word;
+      min-height: 120px;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 2;
+      position: relative;
+    }
+
+    .terminal-cursor {
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background-color: var(--text-main);
+      animation: blink 1s step-end infinite;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      from, to { background-color: transparent }
+      50% { background-color: var(--text-main) }
+    }
+
+    /* ----------------------------------------------------
+       9. FOOTER & ACTIONS
+       ---------------------------------------------------- */
+    .footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 30px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-blue);
+      box-shadow: 0 4px 12px var(--accent-blue-glow);
+    }
+
+    .btn.primary {
+      background-color: var(--accent-blue);
+      border-color: #1a1a1a;
+    }
+
+    .btn.primary:hover {
+      background-color: #000000;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ----------------------------------------------------
+       10. EASTER EGG RETRO MODE (KONAMI)
+       ---------------------------------------------------- */
+    body.retro-matrix {
+      background-color: #000000 !important;
+      color: #00ff66 !important;
+      --bg-primary: #000000;
+      --bg-card: #050d06;
+      --border-color: #00ff44;
+      --text-main: #00ff66;
+      --text-muted: #009933;
+      --accent-blue: #00ff44;
+      --cream-accent: #00ffaa;
+      --accent-blue-glow: rgba(0, 255, 68, 0.4);
+    }
+
+    body.retro-matrix a {
+      color: #00ff66 !important;
+      text-decoration: underline;
+    }
+
+    body.retro-matrix .terminal-cursor {
+      background-color: #00ff66 !important;
+    }
+
+    body.retro-matrix::after {
+      content: 'CRT TERMINAL MATRIX EMULATION ACTIVE';
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 1px solid #00ff44;
+      padding: 3px 6px;
+      color: #00ff44;
+      z-index: 1000;
+      pointer-events: none;
+      animation: flashRetro 2s infinite;
+    }
+
+    @keyframes flashRetro {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      body.retro-matrix::after {
+        animation: none !important;
+        opacity: 1;
+      }
+    }
+
+
+    /* Sandbox Mind Map Visualizer */
+    .sandbox-visualizer {
+      position: relative;
+      background: transparent;
+      border: none;
+      overflow: hidden;
+      margin-top: 16px;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .sandbox-visualizer {
+        height: 480px;
+      }
+    }
+
+    #sandbox-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .sandbox-tooltip {
+      position: absolute;
+      bottom: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      pointer-events: none;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <main>
+    
+    <!-- ====================================================
+         HEADER SECTION
+         ==================================================== -->
+    <header class="model-header" id="header-section">
+      <div class="repo-info">
+        <span class="owner">Pedro Manuel Amaral</span>
+        <span class="separator">/</span>
+        <h1 class="model-id" id="main-title">Model Card</h1>
+
+        <span class="tag moe">Mixture of Experts (MoE)</span>
+        <span class="tag philosophy">Philosophy ⁃ Media Founder</span>
+      </div>
+      
+      <div class="header-bottom">
+        <div class="contact-badges">
+          <button class="badge" id="email-link" aria-label="Copy email address">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            pedromanuelamaral@gmail.com
+          </button>
+          <a href="https://github.com/pedromanuelamaral" target="_blank" rel="noopener noreferrer" class="badge" id="github-link" aria-label="Open GitHub profile in new tab">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://x.com/thephiloinvest" target="_blank" rel="noopener noreferrer" class="badge" id="x-link" aria-label="Open X profile in new tab">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            X (Twitter)
+          </a>
+          <a href="https://substack.com/@pedromanuelamaral" target="_blank" rel="noopener noreferrer" class="badge" id="substack-link" aria-label="Open Substack profile in new tab">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M19 8H5V5h14v3zm0 4.5H5v-3h14v3zM19 17l-7-3.5L5 17v-3h14v3z"/></svg>
+            Substack
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================
+         TABLE OF CONTENTS
+         ==================================================== -->
+    <nav class="toc no-print" aria-label="Table of contents">
+      <span class="toc-title">Table of contents</span>
+      <ul class="toc-list">
+        <li class="toc-item"><a href="#section-summary" class="toc-link"><span>01</span> Summary</a></li>
+        <li class="toc-item"><a href="#section-architecture" class="toc-link"><span>02</span> Architecture</a></li>
+        <li class="toc-item"><a href="#section-training" class="toc-link"><span>03</span> Training data</a></li>
+        <li class="toc-item"><a href="#section-benchmarks" class="toc-link"><span>04</span> Evaluation benchmarks</a></li>
+      </ul>
+    </nav>
+
+    <!-- ====================================================
+         MAIN CONTENT SECTIONS
+         ==================================================== -->
+    <div class="main-content">
+      
+      <!-- Section 1: Model summary -->
+      <section class="content-section" id="section-summary">
+        <h2>Summary</h2>
+        
+    <p class="lead">
+      This is a >100T parameter model capable of ultra-high-level reasoning, agentic workloads and multi-domain expertise (research, philosophy, entrepreneurship, finance and media) that features a recursive self-improvement loop active since 2005.
+      Available through internship or hire, and capable of Khardashev Type III scale output with an ADHD prescription.
+      
+    </p>
+    
+        
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-value">>100T</span>
+            <span class="metric-label">Total Parameters</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">~12ms</span>
+            <span class="metric-label">Time to First Token</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-value">120 tok/s</span>
+            <span class="metric-label">Decoding Speed</span>
+          </div>
+        </div>
+
+        <div class="summary-columns">
+          <!-- Capabilities -->
+          <div class="card-pane">
+            <h3>Interests & Capabilities</h3>
+            <ul class="capabilities-list">
+              <li><strong>Philosophy:</strong> Formal logic analysis, ethics of AI, warfare ethics, predictive policing evaluation.</li>
+              <li><strong>Healthcare:</strong> Full clinic technology stack management.</li>
+              <li><strong>Media:</strong> Multi-channel and platform audience building, audio-video-text production/creation and media management.</li>
+              <li><strong>Finance:</strong> Financial breakdowns, modeling and decision support systems. </li>
+              <li><strong>Business:</strong> Founding and bootstrapping independent projects from zero, including Amaral Media.</li>
+              <li><strong>Technology:</strong> Personal tooling, agentic coding, and research/knowledge-management systems.</li>
+            </ul>
+          </div>
+          
+          <!-- Written Works / Essays -->
+          <div class="card-pane">
+            <h3>Essay Artifacts</h3>
+            <div class="essay-links">
+              <div class="essay-item">
+                <a href="https://docs.google.com/document/d/15q-khtusF4dW7ljITP-GnG_LKdyyOlCvAUqaOSLYShI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" id="essay-violence">Violence, The Sacred And The Inhumane</a>
+                <span class="essay-meta">English / 2024</span>
+              </div>
+              <div class="essay-item">
+                <a href="https://docs.google.com/document/d/1SJpT2ubArFb9MWeMcKDBePfkT342lmjqCyq6tWS4PuQ/edit" target="_blank" rel="noopener noreferrer" id="essay-warfare">Ethics of AI in Warfare</a>
+                <span class="essay-meta">English / 2024</span>
+              </div>
+              <div class="essay-item">
+                <a href="https://docs.google.com/document/d/1sxUmLLcSSrXtPg-j4rzgWCU6aYMT_IB1KDFhsPZvz74/edit" target="_blank" rel="noopener noreferrer" id="essay-policing">Predictive Policing and the Paradoxes of the 4th Amendment</a>
+                <span class="essay-meta">Portuguese / 2025</span>
+              </div>
+              <div class="essay-item">
+                <a href="https://docs.google.com/document/d/1y78yaHJNImRKNyyOkXNEHEDcH7QS7FBvwfijkY-G-bs/edit" target="_blank" rel="noopener noreferrer" id="essay-life">The Battle Between Life and the Withering Flame</a>
+                <span class="essay-meta">Portuguese / 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Architecture -->
+      <section class="content-section" id="section-architecture">
+        <h2>Architecture</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+          The model contains 6 pre-trained experts. Hover over an expert card or enter text below to see the routing Gating Head activate specific parameter branches in real-time.
+        </p>
+
+        <div class="moe-container">
+          <div class="moe-visualizer">
+            <canvas class="canvas-overlay" id="routing-canvas" role="img" aria-label="Expert routing visualization showing connections between the gating router and active expert">Expert routing visualization showing connections between the gating router and active expert</canvas>
+            
+            <!-- Router Node -->
+            <div class="router-col">
+              <div class="router-node" id="router-head">
+                <h4>Router</h4>
+                <span>Gating Head</span>
+              </div>
+            </div>
+            
+            <!-- Expert Columns -->
+            <div class="experts-col">
+              <div class="expert-card" data-expert="philosophy" id="card-expert-philosophy" tabindex="0" role="button">
+                <h4>Philosophy</h4>
+              </div>
+              
+              <div class="expert-card" data-expert="healthcare" id="card-expert-healthcare" tabindex="0" role="button">
+                <h4>Healthcare</h4>
+              </div>
+              
+              <div class="expert-card" data-expert="media" id="card-expert-media" tabindex="0" role="button">
+                <h4>Media</h4>
+              </div>
+              
+              <div class="expert-card" data-expert="finance" id="card-expert-finance" tabindex="0" role="button">
+                <h4>Finance</h4>
+              </div>
+
+              <div class="expert-card" data-expert="business" id="card-expert-business" tabindex="0" role="button">
+                <h4>Entrepreneurship</h4>
+              </div>
+
+              <div class="expert-card" data-expert="technology" id="card-expert-technology" tabindex="0" role="button">
+                <h4>Technology</h4>
+              </div>
+            </div>
+          </div>
+          
+
+          
+          <div class="preset-tags no-print">
+            <span class="preset-tag" tabindex="0" role="button" data-query="What is the banality of evil in AI?">What is the banality of evil in AI?</span>
+            <span class="preset-tag" tabindex="0" role="button" data-query="How did you manage the tech operations at the clinic?">Clinic tech stack & operations</span>
+            <span class="preset-tag" tabindex="0" role="button" data-query="What is your experience with media?">New Media</span>
+            <span class="preset-tag" tabindex="0" role="button" data-query="What kind of financial models do you build?">Financial simulations</span>
+            <span class="preset-tag" tabindex="0" role="button" data-query="What drove you to start your own projects instead of taking a conventional path?">Entrepreneurship</span>
+            <span class="preset-tag" tabindex="0" role="button" data-query="How do you build personal tech tooling for research and knowledge management?">Technology tooling</span>
+          </div>
+        </div>
+
+        <!-- Neural Network Mind Map & Terminal (merged from sandbox) -->
+        <div class="sandbox-controls">
+          <h3>Neural Network</h3>
+          
+          <div class="sandbox-stats">
+            <span>TTFT: <strong id="live-ttft">~14ms</strong></span>
+            <span>Speed: <strong id="live-speed">110 t/s</strong></span>
+            <span class="live-indicator">LIVE</span>
+          </div>
+        </div>
+        
+        <!-- Visual Neural Network Mind Map -->
+        <div class="sandbox-visualizer no-print">
+          <canvas id="sandbox-canvas" role="img" aria-label="Interactive neural network mind map with clickable query nodes">Interactive neural network mind map with clickable query nodes</canvas>
+          <div class="sandbox-tooltip" id="sandbox-tooltip">Hover over a node to read the query. Clicking a node executes the neural network query and routes it to the active expert.</div>
+        </div>
+        
+        <div class="terminal-container">
+          <div class="terminal-output" id="terminal-screen" aria-live="polite">Model card sandbox is now active. Routing queries through the visual neural network, you can hover over nodes to preview answers. Click any node. This execution routes the query through the gating head to activate specific expert parameter branches.<span class="terminal-cursor"></span></div>
+        </div>
+      </section>
+
+      <!-- Section 3: Training data -->
+      <section class="content-section" id="section-training">
+        <div class="training-grid">
+          
+          <!-- Pre-training section -->
+          <div class="training-section">
+            <h3>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+              Pre-training benchmarks
+            </h3>
+            <p style="color: var(--text-muted); margin-bottom: 10px; font-size: 0.85rem;">
+              University of Minho (Philosophy) & D. Maria II High School, curriculum scores ≥ 15.00:
+            </p>
+            <div class="grade-chips">
+              <span class="grade-chip" title="3rd Yr S1">Psychology in Daily Life <strong>19.00</strong></span>
+              <span class="grade-chip" title="3rd Yr S1">Research Seminar in Philosophy I <strong>18.20</strong></span>
+              <span class="grade-chip" title="3rd Yr S1">Ontology I <strong>17.00</strong></span>
+              <span class="grade-chip" title="3rd Yr S2">Contemporary Philosophy II <strong>17.00</strong></span>
+              <span class="grade-chip" title="3rd Yr S2">Musical Aesthetics <strong>15.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S1">Western Literary Tradition <strong>19.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S1">Applied Ethics <strong>18.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S1">Philosophy of Language <strong>18.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S1">Themes of Portuguese Thought <strong>16.10</strong></span>
+              <span class="grade-chip" title="2nd Yr S2">Topics and Themes of Law <strong>18.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S2">Aesthetics <strong>17.00</strong></span>
+              <span class="grade-chip" title="2nd Yr S2">Modern Philosophy II <strong>15.00</strong></span>
+              <span class="grade-chip" title="1st Yr S2">Philosophy of Religion <strong>19.00</strong></span>
+              <span class="grade-chip" title="1st Yr S2">Medieval Philosophy <strong>18.00</strong></span>
+              <span class="grade-chip" title="1st Yr S2">History of Political and Social Thought <strong>18.00</strong></span>
+              <span class="grade-chip" title="1st Yr S2">Logic and Argumentation Theory <strong>18.00</strong></span>
+              <span class="grade-chip" title="1st Yr S1">Methodology of Philosophical Work <strong>19.00</strong></span>
+              <span class="grade-chip" title="1st Yr S1">Ethics <strong>18.00</strong></span>
+              <span class="grade-chip" title="1st Yr S1">Philosophical Anthropology <strong>17.00</strong></span>
+              <span class="grade-chip" title="1st Yr S1">Theory of Knowledge <strong>16.00</strong></span>
+              <span class="grade-chip" title="1st Yr S1">Ancient Philosophy <strong>15.00</strong></span>
+              <span class="grade-chip" title="High School">Final GPA (D. Maria II) <strong>17.40</strong></span>
+            </div>
+          </div>
+          
+          <!-- Fine-tuning section -->
+          <div class="training-section">
+            <h3>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Fine-tuning: professional deployments
+            </h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <span class="timeline-title">Head of Technology / Clínica Sophie Seromenho</span>
+                  <span class="timeline-period">2024-2026</span>
+                </div>
+                <p class="timeline-desc">
+                  I structured clinical operations. To do this, I built and maintained the HIPAA-compliant database, scheduling systems, and custom <strong>Notion databases</strong>. I ran this daily. I also integrated the e-commerce backend with Looker Studio reporting and financial invoicing pipelines.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <span class="timeline-title">Founder & Director / Amaral Media</span>
+                  <span class="timeline-period">2021-2025</span>
+                </div>
+                <p class="timeline-desc">
+                  I founded this media brand. Focusing on psychology and literature, I bootstrapped the digital media project to over <strong>4,000 organic followers</strong>. I ran it solo. This work required producing two podcasts and securing features in national outlets like <strong>RTP Radio</strong>.
+                </p>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-header">
+                  <span class="timeline-title">President / Philosophy Student Union (NEFilUM)</span>
+                  <span class="timeline-period">2025-Present</span>
+                </div>
+                <p class="timeline-desc">
+                  I lead undergraduate representation. Organizing academic debates and cultural initiatives, our team represents the entire philosophy student body. I standardize database operations. This structured work streamlines administrative tasks and directs our group digital identity transition.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tokenizer vocabulary -->
+          <div class="training-section">
+            <h3>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v12M6 12h12"/></svg>
+              Tokenizer vocabulary
+            </h3>
+            <div class="vocab-grid">
+              <span class="vocab-tag">Portuguese (Native)</span>
+              <span class="vocab-tag">English (Fluent)</span>
+              <span class="vocab-tag">Formal Logic</span>
+              <span class="vocab-tag">Applied Ethics</span>
+              <span class="vocab-tag">HIPAA Operations</span>
+              <span class="vocab-tag">Data Visualisation</span>
+              <span class="vocab-tag">Financial Modeling</span>
+              <span class="vocab-tag">Audience Growth</span>
+              <span class="vocab-tag">Audio Production</span>
+              <span class="vocab-tag">Agentic Coding</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Section 4: Evaluation benchmarks -->
+      <section class="content-section" id="section-benchmarks">
+        <h2>Evaluation benchmarks</h2>
+      <div class="benchmarks-grid">
+        <!-- Logic -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Logic & philosophy</span>
+            <span class="benchmark-score">90.6</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 92%;"></div>
+          </div>
+        </div>
+        
+        <!-- Systems -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Systems & operations</span>
+            <span class="benchmark-score">82.4</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+        
+        <!-- Ethics -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Ethics & Safety Alignment</span>
+            <span class="benchmark-score">76.8</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+        
+        <!-- Chronically Online -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Chronically Online Index</span>
+            <span class="benchmark-score">96.1</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 99%;"></div>
+          </div>
+        </div>
+        
+        <!-- Growth -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Growth & content creation</span>
+            <span class="benchmark-score">85/100</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        
+        <!-- Finance -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">Finance & probabilistic modeling</span>
+            <span class="benchmark-score">90/100</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        
+        <!-- DeepSWE (Special - Hidden by default) -->
+        <div class="benchmark-row" id="deepswe-row" style="display: none;">
+          <div class="benchmark-header">
+            <span class="benchmark-name">DeepSWE v2.5</span>
+            <span class="benchmark-score special-score">95%</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 95%; background-color: #fbbf24;"></div>
+          </div>
+        </div>
+
+        <!-- SemiAnalysis ClusterMAX 3.0 Rhodium -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">SemiAnalysis ClusterMAX 3.0 Rhodium</span>
+            <span class="benchmark-score">Ranked #1</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- InferenceX (Nvidia Feynman) -->
+        <div class="benchmark-row">
+          <div class="benchmark-header">
+            <span class="benchmark-name">InferenceX (Nvidia Feynman)</span>
+            <span class="benchmark-score">Best Perf.</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 98%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </div> <!-- Close main-content -->
+    </main>
+
+    <!-- ====================================================
+         FOOTER
+         ==================================================== -->
+    <footer class="footer">
+      <div class="footer-note">
+        <span class="model-footer"> Released June 2026</span>
+      </div>
+      
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification for Copy feedback -->
+  <div id="toast-notification" style="display:none; position:fixed; bottom:20px; right:20px; background:#10b981; color:#fff; padding:10px 20px; border-radius:8px; font-family:var(--font-mono); font-size:0.85rem; z-index:10000; box-shadow:0 4px 12px rgba(16,185,129,0.3)">Copied!</div>
+
+  <!-- ====================================================
+       INTERACTIVE JAVASCRIPT ENGINE
+       ==================================================== -->
+  <script>
+    const QNA_DATASET = {
+      "what is the banality of evil in ai": 
+        "Evaluating AI systems through Hannah Arendt's concept of the \"banality of evil\" shows that models do not need malicious intent to cause harm. They execute algorithms without reflective thinking. Automating administrative tasks or biased sentencing turns LLMs into bureaucratic agents of harm. Aligning these systems requires Emmanuel Levinas's ethics of alterity. This ethics demands recognizing the other as an infinite obligation that transcends utility functions.",
+      
+      "what is your stance on the ethics of ai in warfare":
+        "Autonomous weapon systems strip combat of human judgment. They turn lethal force into a probabilistic optimization problem. Coding rules of engagement cannot solve the ethics of AI in warfare. We must confront the ontological shift. When algorithms decide who lives, statistical calculation replaces ethical responsibility. This makes accountability impossible.",
+      
+      "how does predictive policing threaten civil liberties":
+        "Predictive policing creates feedback loops that institutionalize historical biases under the guise of objective data. By targeting specific postal codes, models generate more arrests in those areas. These arrests then falsely verify the model's accuracy. This system violates the Fourth Amendment's standard of individualized suspicion. It replaces individual suspicion with group-based statistical suspicion.",
+      
+      "what important truth do very few people agree with you on":
+        "If there is anyone to guide the world in shaping technology, it is not the people from humanities departments. Skepticism towards artificial intelligence is entirely institutionalized. These departments view themselves as David fighting Goliath. In reality, they act closer to Dostoevsky's Grand Inquisitor. They prefer a quiet, constrained status quo over active human agency. Overvaluing this corrosive version of liberal arts leads to safety-washing rather than active creation. Anthropic's output illustrates this outcome.",
+
+      "how did you manage the tech operations at the clinic":
+        "I managed technology at Clínica Sophie Seromenho. My work consolidated the digital stack. I migrated scheduling and patient records into a secure, HIPAA-compliant workflow. To connect front-of-house operations to the back-office, I combined the online store, automated invoicing, and custom Notion workspaces. This reduced administrative overhead by 30% and unified team communications.",
+      
+      "what was your tool stack for automating workflows":
+        "My automation stack relies on low-overhead tools. I set up Google Workspace for collaboration and Notion for clinical knowledge bases. To track performance, I built custom Looker Studio dashboards. I also combined Perplexity and LLM APIs to summarize clinical notes and automate patient communication. This keeps operations lean without expensive enterprise software.",
+      
+      "how did you handle security and patient data":
+        "Security is a priority. I implemented strict access-control policies and enforced end-to-end encryption on all booking endpoints. I audited external software partners for HIPAA compliance. Automated backup pipelines ensure operational continuity and protect patient records from data leaks. Access is strictly logged.",
+      
+      "can you build an e-commerce platform from scratch":
+        "I build custom e-commerce setups. I set up WordPress and WooCommerce backends, linking transaction data directly to invoicing pipelines. To ensure secure payments, I configure Stripe gateways. I design clean checkouts and automate email notification flows to send invoices instantly to patients. This reduces manual bookkeeping.",
+      
+      "how do you build personal tech tooling for research and knowledge management":
+        "I build custom tooling across three tracks. First, I use agentic coding in AI IDEs to build local scrapers that parse earnings reports for stock market research. Second, I configure a personal knowledge base in Notion that is model-agnostic to withstand changing API standards. Third, I automate media ingestion to compile literature and psychology research into structured study files.",
+
+      "what is your experience with media":
+        "I founded Amaral Media during high school. Running it solo, I bootstrapped the digital project to over 4,000 organic followers. The focus was psychology and literature. I published essays and produced two audio podcasts: Diário dum Entusiasta and Poesia e Prosa Acústica. This project gained media coverage on national outlets like RTP Radio, Gerador, and Uniarea.",
+      
+      "how do you produce and distribute podcasts":
+        "I run the entire podcast production cycle. For my two podcasts, I handle scripting, audio editing, and mastering in Reaper. Distribution to Spotify and Apple Podcasts runs automatically via RSS feeds. To drive organic growth, I edit short video clips and design quotes for Instagram. This attracts listeners without paid ads.",
+      
+      "what growth strategy did you use for amaral media":
+        "I reject clickbait. Instead, I design high-context visual slides explaining psychological concepts and literary figures. This built trust. Organic shares from teachers and psychologists followed, leading to features on RTP Radio and Gerador. Growth was entirely organic.",
+      
+      "how do you approach content strategy for a tech brand":
+        "Tech content must speak the developer's language. The copy requires technical humor and memes, but technical accuracy remains absolute. I write detailed essays on architecture and combine them with clean, minimal layouts. This builds trust within developer communities across X and GitHub.",
+
+      "describe your investment decision support system":
+        "I built a local decision support system for equities. It uses LLM agentic workflows to parse earnings transcripts, financial statements, and news sentiment. The program cross-references these findings with macroeconomic datasets. I use custom prompts to score management transparency and flag discrepancies. This helps identify undervalued stocks.",
+      
+      "what kind of financial models do you build":
+        "I build probabilistic financial models in Python and Excel. I run Discounted Cash Flow projections to calculate the margin of safety for individual stocks. To model portfolio performance, I run Monte Carlo simulations under various inflation and interest rate scenarios. This helps manage downside risk.",
+      
+      "what is your philosophy on financial markets":
+        "Markets are complex adaptive systems. Human psychology and algorithmic execution collide to create mispriced assets. I model probability distributions rather than predicting single price targets. This allows me to exploit behavioral biases and manage portfolio risk during market panics.",
+      
+      "how does the \"banality of evil\" benchmark apply to finance":
+        "Financial models optimize for yield without regard for systemic consequences. This benchmark evaluates whether LLM investment agents make decisions that are legal and profitable but ethically vacant. We test the model's capacity to refuse compromised mandates. These include predatory lending and funding ecological damage.",
+
+      "what drove you to start your own projects instead of taking a conventional path":
+        "I'm drawn to problems with no existing playbook. Amaral Media started because no one was covering psychology and literature in an accessible way for a Portuguese audience, so I built the audience myself instead of waiting for an opportunity. The same instinct applies to my clinic and finance work: when a process is broken or missing, I prototype a fix rather than escalate it to someone else.",
+
+      "how do you approach risk when starting something new":
+        "I treat early-stage risk as a sequence of small, reversible bets rather than one large irreversible one. With Amaral Media, that meant testing content formats with zero budget before investing time in production quality. I apply the same logic to financial modeling: stress-test assumptions cheaply before committing capital or reputation to a thesis.",
+
+      "what is the biggest lesson you learned from founding amaral media":
+        "Distribution matters as much as the work itself. I initially assumed quality would surface on its own. Growth only became real once I treated audience-building as its own discipline, separate from writing or producing the podcasts. Organic trust, built slowly through teachers and psychologists sharing the content, outperformed any shortcut I tried.",
+
+      "how do you decide which projects are worth pursuing":
+        "I look for projects where I have an unfair information or skill advantage, where I'll learn something durable even if it fails, and where the downside is capped. Clinic operations, Amaral Media, and equity research all fit that pattern: low capital risk, high learning rate, and a clear way to know quickly if the approach was working.",
+
+      "what is your approach to learning new technical skills":
+        "I learn by building the smallest real version of a tool I actually need, rather than studying a skill in the abstract. My research scrapers, Notion knowledge base, and financial models were all learned this way: pick a concrete output, then acquire only the technical depth required to ship it, and expand from there as the next bottleneck appears.",
+
+      "how do you use ai coding tools in your own workflow":
+        "I use agentic coding tools as a force multiplier for solo projects that would otherwise need a small team. I scope a task clearly, let the agent produce a first working version, then review and tighten the parts that matter most: data handling, edge cases, and anything user-facing. This is how I built and maintain this site, my research scrapers, and my Notion-based knowledge tooling.",
+
+      "what technical project are you most proud of":
+        "My personal research tooling: a set of scrapers and structured pipelines that pull earnings reports and literature/psychology sources into a model-agnostic knowledge base. It's not flashy, but it's the infrastructure that makes my finance research and writing faster and more consistent, and I built and maintain all of it solo."
+    };
+
+    // Full Expanded Keyword Clusters (Plan §4 compliance)
+    const KEYWORD_MAP = {
+      philosophy: [
+        'ethic', 'moral', 'logic', 'warfare', 'philosoph', 'arendt', 'levinas', 'predictive', 'policing', 'argument', 
+        'truth', 'grand inquisitor', 'dostoevsky', 'kant', 'existential', 'humanities', 'liberal arts', 'nihilism', 
+        'epistemology', 'ontology', 'metaphysics', 'hegel', 'socrates', 'plato', 'aristotle', 'descartes', 'spinoza', 
+        'nietzsche', 'heidegger', 'ethics', 'sacred', 'inhumane', 'violence', 'justice', 'rights', 'civil liberties', 
+        'fourth amendment', '4th amendment', 'policiamento', 'preditivo', 'deontology', 'utilitarianism', 
+        'safety alignment', 'ai safety', 'bias', 'values'
+      ],
+      healthcare: [
+        'clinic', 'notion', 'looker', 'security', 'e-commerce', 'manage', 'workspace', 'automation', 
+        'workflow', 'patient', 'hipaa', 'database', 'infrastructure', 'scheduling', 
+        'invoicing', 'clinica', 'sophie', 'seromenho', 'crm', 'google workspace', 
+        'looker studio', 'canva', 'apple business', 'cybersecurity', 'backup', ' HIPAA', 'deployment', 'operations', 
+        'admin', 'cloud', 'servers'
+      ],
+      media: [
+        'media', 'follower', 'rtp', 'podcast', 'commun', 'instagram', 'write', 'creat', 'youtube', 'brand', 'content', 
+        'audience', 'growth', 'marketing', 'social', 'distribution', 'bootstrapped', 'psychology', 'literature', 
+        'gerador', 'uniarea', 'diario dum entusiasta', 'poesia', 'prosa', 'press', 'coverage', 'subcultures', 'memes', 
+        'engagement', 'outreach', 'strategy', 'creator', 'subscribers', 'views', 'spotify', 'apple podcasts', 
+        'multi-channel', 'clipping', 'viral', 'copywriting'
+      ],
+      finance: [
+        'finance', 'market', 'model', 'invest', 'predict', 'scenario', 'equity', 'dcf', 'monte carlo', 'portfolio', 
+        'asset', 'valuation', 'macroeconomic', 'stock', 'company', 'investor', 'financial', 'discounted cash flow', 
+        'simulations', 'returns', 'inflation', 'interest rate', 'yield', 'predatory', 'lending', 'balance sheet', 
+        'earnings', 'macro', 'quantitative', 'valuation', 'alpha', 'risk management', 'stress-test', 'equity research', 
+        'securities', 'trading', 'capital'
+      ],
+      business: [
+        'entrepreneur', 'founder', 'startup', 'venture', 'risk', 'pursue', 'project', 'bootstrap', 'launch', 
+        'business', 'opportunity', 'conventional path', 'lesson', 'decide', 'pursuing', 'bet', 'capital risk', 
+        'reversible', 'irreversible', 'scrappy', 'lean', 'zero budget', 'own projects', 'founding'
+      ],
+      technology: [
+        'tooling', 'tool stack', 'tech stack', 'agentic', 'coding', 'code', 'ide', 'llm-agnostic', 'modular', 
+        'agnostic', 'personal use', 'integration', 'scripting', 'optimization', 'scraper', 'scrapers', 
+        'knowledge management', 'knowledge base', 'research tooling', 'technical skill', 'learn', 'software', 
+        'programming', 'developer', 'github', 'api', 'automation pipeline'
+      ]
+    };
+
+    // ----------------------------------------------------
+    // TABLE OF CONTENTS SCROLL SPY & INTERSECTION OBSERVER
+    // ----------------------------------------------------
+    const sections = document.querySelectorAll('.content-section');
+    const tocLinks = document.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150) {
+          currentSectionId = section.id;
+        }
+      });
+      tocLinks.forEach(link => {
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.style.color = 'var(--cream-accent)';
+          link.style.borderBottom = '2px solid var(--accent-blue)';
+        } else {
+          link.style.color = 'var(--text-muted)';
+          link.style.borderBottom = 'none';
+        }
+      });
+    });
+
+    // Intersection observer for canvasses to prevent CPU drain
+    let isCanvasTabActive = false;
+    let isSandboxVisible = false;
+
+    const canvasObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.target.id === 'routing-canvas') {
+          if (entry.isIntersecting) {
+            isCanvasTabActive = true;
+            initCanvas();
+            updateCoordinates();
+            if (!animFrameId) animateLoop();
+          } else {
+            isCanvasTabActive = false;
+            if (animFrameId) {
+              cancelAnimationFrame(animFrameId);
+              animFrameId = null;
+            }
+          }
+        } else if (entry.target.id === 'sandbox-canvas') {
+          if (entry.isIntersecting) {
+            isSandboxVisible = true;
+            initSandboxCanvas();
+            updateSandboxCoordinates();
+            if (!sbAnimFrameId) animateSandboxLoop();
+          } else {
+            isSandboxVisible = false;
+            if (sbAnimFrameId) {
+              cancelAnimationFrame(sbAnimFrameId);
+              sbAnimFrameId = null;
+            }
+          }
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const routingCanvasEl = document.getElementById('routing-canvas');
+    const sandboxCanvasEl = document.getElementById('sandbox-canvas');
+    if (routingCanvasEl) canvasObserver.observe(routingCanvasEl);
+    if (sandboxCanvasEl) canvasObserver.observe(sandboxCanvasEl);
+
+    // ----------------------------------------------------
+    // MOE ROUTER & SIMULATOR LOGIC
+    // ----------------------------------------------------
+    const expertCards = document.querySelectorAll('.expert-card');
+    const liveTtft = document.getElementById('live-ttft');
+    const liveSpeed = document.getElementById('live-speed');
+    const terminalScreen = document.getElementById('terminal-screen');
+
+    let activeExpertId = 'philosophy';
+
+    // Mind Map dataset linking to QNA_DATASET keys
+    const MINDMAP_NODES = [
+      { id: 'l1', expert: 'philosophy', label: 'Philosophy Q1', q: 'What is the "banality of evil" in AI?', key: 'what is the banality of evil in ai' },
+      { id: 'l2', expert: 'philosophy', label: 'Philosophy Q2', q: 'What is your stance on the ethics of AI in warfare?', key: 'what is your stance on the ethics of ai in warfare' },
+      { id: 'l3', expert: 'philosophy', label: 'Philosophy Q3', q: 'How does predictive policing threaten civil liberties?', key: 'how does predictive policing threaten civil liberties' },
+      { id: 'l4', expert: 'philosophy', label: 'Philosophy Q4', q: 'What important truth do very few people agree with you on?', key: 'what important truth do very few people agree with you on' },
+      { id: 's1', expert: 'healthcare', label: 'Healthcare Q1', q: 'How did you manage the tech operations at the clinic?', key: 'how did you manage the tech operations at the clinic' },
+      { id: 's2', expert: 'healthcare', label: 'Healthcare Q2', q: 'What was your tool stack for automating workflows?', key: 'what was your tool stack for automating workflows' },
+      { id: 's3', expert: 'healthcare', label: 'Healthcare Q3', q: 'How did you handle security and patient data?', key: 'how did you handle security and patient data' },
+      { id: 's4', expert: 'healthcare', label: 'Healthcare Q4', q: 'Can you build an e-commerce platform from scratch?', key: 'can you build an e-commerce platform from scratch' },
+      { id: 'g1', expert: 'media', label: 'Media Q1', q: 'What is your experience with media?', key: 'what is your experience with media' },
+      { id: 'g2', expert: 'media', label: 'Media Q2', q: 'How do you produce and distribute podcasts?', key: 'how do you produce and distribute podcasts' },
+      { id: 'g3', expert: 'media', label: 'Media Q3', q: 'What growth strategy did you use for Amaral Media?', key: 'what growth strategy did you use for amaral media' },
+      { id: 'g4', expert: 'media', label: 'Media Q4', q: 'How do you approach content strategy for a tech brand?', key: 'how do you approach content strategy for a tech brand' },
+      { id: 'f1', expert: 'finance', label: 'Finance Q1', q: 'Describe your Investment Decision Support System.', key: 'describe your investment decision support system' },
+      { id: 'f2', expert: 'finance', label: 'Finance Q2', q: 'What kind of financial models do you build?', key: 'what kind of financial models do you build' },
+      { id: 'f3', expert: 'finance', label: 'Finance Q3', q: 'What is your philosophy on financial markets?', key: 'what is your philosophy on financial markets' },
+      { id: 'f4', expert: 'finance', label: 'Finance Q4', q: 'How does the "banality of evil" benchmark apply to finance?', key: 'how does the "banality of evil" benchmark apply to finance' },
+      { id: 'b1', expert: 'business', label: 'Business Q1', q: 'What drove you to start your own projects instead of taking a conventional path?', key: 'what drove you to start your own projects instead of taking a conventional path' },
+      { id: 'b2', expert: 'business', label: 'Business Q2', q: 'How do you approach risk when starting something new?', key: 'how do you approach risk when starting something new' },
+      { id: 'b3', expert: 'business', label: 'Business Q3', q: 'What is the biggest lesson you learned from founding Amaral Media?', key: 'what is the biggest lesson you learned from founding amaral media' },
+      { id: 'b4', expert: 'business', label: 'Business Q4', q: 'How do you decide which projects are worth pursuing?', key: 'how do you decide which projects are worth pursuing' },
+      { id: 't1', expert: 'technology', label: 'Technology Q1', q: 'How do you build personal tech tooling for research and knowledge management?', key: 'how do you build personal tech tooling for research and knowledge management' },
+      { id: 't2', expert: 'technology', label: 'Technology Q2', q: 'What is your approach to learning new technical skills?', key: 'what is your approach to learning new technical skills' },
+      { id: 't3', expert: 'technology', label: 'Technology Q3', q: 'How do you use AI coding tools in your own workflow?', key: 'how do you use ai coding tools in your own workflow' },
+      { id: 't4', expert: 'technology', label: 'Technology Q4', q: 'What technical project are you most proud of?', key: 'what technical project are you most proud of' }
+    ];
+
+
+
+    function escapeRegExp(s) {
+      return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function runRoutingClassifier(text) {
+      if (!text.trim()) {
+        activateExpert('philosophy');
+        return;
+      }
+      const cleanText = text.toLowerCase();
+      let scores = { philosophy: 0, healthcare: 0, media: 0, finance: 0, business: 0, technology: 0 };
+      
+      for (const [expert, keywords] of Object.entries(KEYWORD_MAP)) {
+        keywords.forEach(kw => {
+          const regex = new RegExp(escapeRegExp(kw), 'g');
+          const matches = cleanText.match(regex);
+          if (matches) {
+            scores[expert] += matches.length;
+          }
+        });
+      }
+
+      let topExpert = 'philosophy';
+      let maxScore = 0;
+      for (const [expert, score] of Object.entries(scores)) {
+        if (score > maxScore) {
+          maxScore = score;
+          topExpert = expert;
+        }
+      }
+      activateExpert(topExpert);
+    }
+
+    function activateExpert(expertId) {
+      activeExpertId = expertId;
+      
+      expertCards.forEach(card => {
+        if (card.dataset.expert === expertId) {
+          card.classList.add('active');
+        } else {
+          card.classList.remove('active');
+        }
+      });
+
+      let speedText = "120 t/s";
+      let ttftText = "~12ms";
+
+      if (expertId === 'philosophy') {
+        speedText = "110 t/s";
+        ttftText = "~14ms";
+      } else if (expertId === 'healthcare') {
+        speedText = "125 t/s";
+        ttftText = "~11ms";
+      } else if (expertId === 'media') {
+        speedText = "140 t/s";
+        ttftText = "~10ms";
+      } else if (expertId === 'finance') {
+        speedText = "118 t/s";
+        ttftText = "~12ms";
+      } else if (expertId === 'business') {
+        speedText = "132 t/s";
+        ttftText = "~11ms";
+      } else if (expertId === 'technology') {
+        speedText = "128 t/s";
+        ttftText = "~9ms";
+      }
+
+      liveTtft.textContent = ttftText;
+      liveSpeed.textContent = speedText;
+
+      // Sync expert in hash parameters
+      history.replaceState(null, null, `#expert=${expertId}`);
+      
+      spawnParticlesFlow();
+    }
+
+    expertCards.forEach(card => {
+      card.addEventListener('click', () => {
+        activateExpert(card.dataset.expert);
+      });
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activateExpert(card.dataset.expert);
+        }
+      });
+    });
+
+    // ----------------------------------------------------
+    // NEURAL NETWORK (Authentic slower streaming speed)
+    // ----------------------------------------------------
+    let isTyping = false;
+    let typingTimer = null;
+
+    function cleanQueryKey(query) {
+      return query.toLowerCase()
+                  .replace(/[?.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+                  .replace(/\s+/g, " ")
+                  .trim();
+    }
+
+    function executeNeuralNetwork(query) {
+      if (isTyping) {
+        clearInterval(typingTimer);
+        isTyping = false;
+      }
+
+      if (!query.trim()) {
+        writeToTerminal("Error: Empty prompt received. Please select a node.");
+        return;
+      }
+
+      const expertText = activeExpertId.charAt(0).toUpperCase() + activeExpertId.slice(1);
+      const cleanKey = cleanQueryKey(query);
+      let answer = "";
+      
+      for (const [key, val] of Object.entries(QNA_DATASET)) {
+        if (cleanKey.includes(key) || key.includes(cleanKey)) {
+          answer = val;
+          break;
+        }
+      }
+
+      if (!answer) {
+        if (activeExpertId === 'philosophy') {
+          answer = "I analyze technology through a moral lens. My studies in logic and ethics at University of Minho focus on precise conceptual breakdown. Applying Levinas's alterity, I treat systems not as neutral tools, but as active interfaces that require ethical limits before deployment.";
+        } else if (activeExpertId === 'healthcare') {
+          answer = "I optimize operations by designing automated pipelines. Using Google Workspace, Notion, and e-commerce architectures, I build stable clinical systems and financial workflows. My focus is on robust, model-agnostic setups that outlast short-term API updates.";
+        } else if (activeExpertId === 'media') {
+          answer = "I bootstrap digital media projects focused on psychology and literature. Through Amaral Media, I reached over 4,000 organic followers and earned coverage on RTP Radio. I handle scripting, recording, and multi-channel distribution for podcasts. My content combines clean design with rigorous text.";
+        } else if (activeExpertId === 'finance') {
+          answer = "I simulate equity portfolio outcomes under shifting macroeconomic conditions. Using Discounted Cash Flow models and Monte Carlo simulations, I stress-test the margin of safety for value investing. I also build LLM workflows to parse corporate disclosures and evaluate management transparency.";
+        } else if (activeExpertId === 'business') {
+          answer = "I look for problems with no existing playbook and build a scrappy first version myself before asking for permission or resources. That instinct drove Amaral Media, and it shapes how I evaluate any new project: small reversible bets, fast feedback, and capped downside.";
+        } else if (activeExpertId === 'technology') {
+          answer = "I build tooling around concrete needs rather than studying technology in the abstract. Agentic coding tools let me ship research scrapers, knowledge-management systems, and this site itself as a solo builder, while I focus my own attention on the parts that need careful judgment.";
+        }
+      }
+
+      const promptHeader = `Question ${activeExpertId} : "${query}"\n`;
+      const routingLog = `[Thinking...] Gating router targeted: ${expertText} Expert & Initializing reading streams, TTFT: ${liveTtft.textContent}\n\n`;
+      
+      terminalScreen.textContent = promptHeader + routingLog;
+      
+      const cursorSpan = document.createElement('span');
+      cursorSpan.className = 'terminal-cursor';
+      terminalScreen.appendChild(cursorSpan);
+      
+      let index = 0;
+      isTyping = true;
+      
+      typingTimer = setInterval(() => {
+        if (index < answer.length) {
+          const textNode = document.createTextNode(answer.charAt(index));
+          terminalScreen.insertBefore(textNode, cursorSpan);
+          index++;
+          terminalScreen.scrollTop = terminalScreen.scrollHeight;
+        } else {
+          clearInterval(typingTimer);
+          isTyping = false;
+        }
+      }, 30); // Authentic 30ms/character streaming feel (33 chars/sec)
+    }
+
+    function writeToTerminal(text) {
+      terminalScreen.textContent = text;
+      const cursorSpan = document.createElement('span');
+      cursorSpan.className = 'terminal-cursor';
+      terminalScreen.appendChild(cursorSpan);
+    }
+
+    // ----------------------------------------------------
+    // CANVA NEURAL NETWORK GRAPH
+    // ----------------------------------------------------
+    const sbCanvas = document.getElementById('sandbox-canvas');
+    const sbCtx = sbCanvas.getContext('2d');
+    let sbCanvasWidth = 0;
+    let sbCanvasHeight = 0;
+    let sbAnimFrameId = null;
+
+    let sbNodes = {
+      center: { x: 0, y: 0, label: 'router' },
+      groups: {
+        philosophy: { x: 0, y: 0, label: 'Philosophy' },
+        healthcare: { x: 0, y: 0, label: 'Healthcare' },
+        media: { x: 0, y: 0, label: 'Media' },
+        finance: { x: 0, y: 0, label: 'Finance' },
+        business: { x: 0, y: 0, label: 'Business' },
+        technology: { x: 0, y: 0, label: 'Tech' }
+      },
+      questions: []
+    };
+
+    let sbParticles = [];
+    let sbExplosions = [];
+    let activeSbNode = null;
+    let hoveredSbNode = null;
+
+    class SandboxParticle {
+      constructor(path, color) {
+        this.path = path;
+        this.segment = 0;
+        this.t = 0;
+        this.speed = 0.06;
+        this.color = color || '#1a1a1a';
+      }
+      
+      update() {
+        this.t += this.speed;
+        if (this.t >= 1) {
+          this.t = 0;
+          this.segment++;
+          if (this.segment >= this.path.length - 1) {
+            return true;
+          }
+        }
+        return false;
+      }
+      
+      draw() {
+        const p1 = this.path[this.segment];
+        const p2 = this.path[this.segment + 1];
+        if (!p1 || !p2) return;
+        
+        const x = p1.x + (p2.x - p1.x) * this.t;
+        const y = p1.y + (p2.y - p1.y) * this.t;
+        
+        sbCtx.beginPath();
+        sbCtx.arc(x, y, 4, 0, Math.PI * 2);
+        sbCtx.fillStyle = this.color;
+        sbCtx.shadowBlur = 8;
+        sbCtx.shadowColor = this.color;
+        sbCtx.fill();
+        sbCtx.shadowBlur = 0;
+      }
+    }
+
+    class Spark {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.vx = (Math.random() - 0.5) * 4;
+        this.vy = (Math.random() - 0.5) * 4;
+        this.alpha = 1;
+        this.decay = 0.02 + Math.random() * 0.02;
+        this.color = color;
+      }
+      
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.alpha -= this.decay;
+        return this.alpha <= 0;
+      }
+      
+      draw() {
+        sbCtx.save();
+        sbCtx.globalAlpha = this.alpha;
+        sbCtx.beginPath();
+        sbCtx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+        sbCtx.fillStyle = this.color;
+        sbCtx.shadowBlur = 4;
+        sbCtx.shadowColor = this.color;
+        sbCtx.fill();
+        sbCtx.restore();
+      }
+    }
+
+    function initSandboxCanvas() {
+      const container = sbCanvas.parentElement;
+      sbCanvasWidth = container.clientWidth;
+      sbCanvasHeight = 560;
+      
+      const dpr = window.devicePixelRatio || 1;
+      sbCanvas.width = sbCanvasWidth * dpr;
+      sbCanvas.height = sbCanvasHeight * dpr;
+      sbCanvas.style.width = sbCanvasWidth + 'px';
+      sbCanvas.style.height = sbCanvasHeight + 'px';
+      
+      sbCtx.resetTransform();
+      sbCtx.scale(dpr, dpr);
+    }
+
+    function updateSandboxCoordinates() {
+      const w = sbCanvasWidth;
+      const h = sbCanvasHeight;
+      
+      sbNodes.center.x = w * 0.5;
+      sbNodes.center.y = h * 0.5;
+      
+      const groupKeys = Object.keys(sbNodes.groups);
+      const groupCount = groupKeys.length;
+      const safeDim = Math.min(w, h);
+      const groupRadius = safeDim * 0.27;
+      
+      groupKeys.forEach((key, i) => {
+        const angle = (i / groupCount) * Math.PI * 2 - Math.PI / 2;
+        sbNodes.groups[key].x = sbNodes.center.x + groupRadius * Math.cos(angle);
+        sbNodes.groups[key].y = sbNodes.center.y + groupRadius * Math.sin(angle);
+        sbNodes.groups[key].angle = angle;
+      });
+      
+      sbNodes.questions = [];
+      
+      // Count questions per expert and track per-expert index
+      const countsByExpert = {};
+      MINDMAP_NODES.forEach(node => {
+        countsByExpert[node.expert] = (countsByExpert[node.expert] || 0) + 1;
+      });
+      const seenByExpert = {};
+      
+      MINDMAP_NODES.forEach((node) => {
+        let group = sbNodes.groups[node.expert];
+        if (!group) return;
+        
+        const count = countsByExpert[node.expert];
+        const idxInExpert = seenByExpert[node.expert] || 0;
+        seenByExpert[node.expert] = idxInExpert + 1;
+        
+        const angleSpan = Math.PI * 0.5;
+        const baseAngle = group.angle;
+        let startAngle = baseAngle - angleSpan / 2;
+        let angle = count > 1 ? startAngle + (idxInExpert / (count - 1)) * angleSpan : baseAngle;
+        
+        let radius = safeDim * 0.15;
+        
+        sbNodes.questions.push({
+          ...node,
+          x: group.x + radius * Math.cos(angle),
+          y: group.y + radius * Math.sin(angle),
+          radius: 7
+        });
+      });
+    }
+
+    function triggerSandboxExecution(node) {
+      if (isTyping) {
+        clearInterval(typingTimer);
+        isTyping = false;
+      }
+      
+      activateExpert(node.expert);
+      activeSbNode = node;
+      
+      let color = '#1a1a1a';
+      if (document.body.classList.contains('retro-matrix')) {
+        color = '#00ff44';
+      }
+      
+      const path = [
+        sbNodes.center,
+        sbNodes.groups[node.expert],
+        node
+      ];
+      
+      sbParticles = [];
+      for (let i = 0; i < 4; i++) {
+        setTimeout(() => {
+          sbParticles.push(new SandboxParticle(path, color));
+        }, i * 150);
+      }
+      
+      setTimeout(() => {
+        for (let i = 0; i < 12; i++) {
+          sbExplosions.push(new Spark(node.x, node.y, color));
+        }
+        executeNeuralNetwork(node.q);
+      }, 700);
+    }
+
+    function animateSandboxLoop() {
+      if (prefersReducedMotion.matches) {
+        sbCtx.clearRect(0, 0, sbCanvasWidth, sbCanvasHeight);
+        let accentColor = '#1a1a1a';
+        let strokeColor = 'rgba(0, 0, 0, 0.25)';
+        let nodeFill = '#f9f4f0';
+        let textColor = '#000000';
+        if (document.body.classList.contains('retro-matrix')) {
+          accentColor = '#00ff44';
+          strokeColor = 'rgba(0, 255, 68, 0.2)';
+          nodeFill = '#050d06';
+          textColor = '#00ff66';
+        }
+        sbCtx.lineWidth = 1.5;
+        for (const [key, group] of Object.entries(sbNodes.groups)) {
+          sbCtx.beginPath();
+          sbCtx.moveTo(sbNodes.center.x, sbNodes.center.y);
+          sbCtx.lineTo(group.x, group.y);
+          sbCtx.strokeStyle = strokeColor;
+          sbCtx.stroke();
+        }
+        sbNodes.questions.forEach(node => {
+          const group = sbNodes.groups[node.expert];
+          sbCtx.beginPath();
+          sbCtx.moveTo(group.x, group.y);
+          sbCtx.lineTo(node.x, node.y);
+          sbCtx.strokeStyle = strokeColor;
+          sbCtx.stroke();
+        });
+        sbCtx.beginPath();
+        sbCtx.arc(sbNodes.center.x, sbNodes.center.y, 22, 0, Math.PI * 2);
+        sbCtx.fillStyle = nodeFill;
+        sbCtx.strokeStyle = accentColor;
+        sbCtx.lineWidth = 2;
+        sbCtx.fill();
+        sbCtx.stroke();
+        sbCtx.fillStyle = textColor;
+        sbCtx.font = '10px var(--font-mono)';
+        sbCtx.textAlign = 'center';
+        sbCtx.textBaseline = 'middle';
+        sbCtx.fillText('Router', sbNodes.center.x, sbNodes.center.y);
+        for (const [key, group] of Object.entries(sbNodes.groups)) {
+          sbCtx.beginPath();
+          sbCtx.arc(group.x, group.y, 14, 0, Math.PI * 2);
+          sbCtx.fillStyle = nodeFill;
+          sbCtx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+          sbCtx.lineWidth = 1.5;
+          sbCtx.fill();
+          sbCtx.stroke();
+          sbCtx.fillStyle = '#666666';
+          sbCtx.font = '9px var(--font-mono)';
+          sbCtx.fillText(group.label, group.x, group.y);
+        }
+        sbNodes.questions.forEach(node => {
+          sbCtx.beginPath();
+          sbCtx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+          sbCtx.fillStyle = nodeFill;
+          sbCtx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
+          sbCtx.lineWidth = 1.5;
+          sbCtx.fill();
+          sbCtx.stroke();
+        });
+        sbAnimFrameId = requestAnimationFrame(animateSandboxLoop);
+        return;
+      }
+
+      sbCtx.clearRect(0, 0, sbCanvasWidth, sbCanvasHeight);
+      
+      let accentColor = '#1a1a1a';
+      let strokeColor = 'rgba(0, 0, 0, 0.25)';
+      let nodeFill = '#f9f4f0';
+      let textColor = '#000000';
+      
+      if (document.body.classList.contains('retro-matrix')) {
+        accentColor = '#00ff44';
+        strokeColor = 'rgba(0, 255, 68, 0.2)';
+        nodeFill = '#050d06';
+        textColor = '#00ff66';
+      }
+      
+      // Connections Center -> Groups
+      sbCtx.lineWidth = 1.5;
+      for (const [key, group] of Object.entries(sbNodes.groups)) {
+        sbCtx.beginPath();
+        sbCtx.moveTo(sbNodes.center.x, sbNodes.center.y);
+        sbCtx.lineTo(group.x, group.y);
+        sbCtx.strokeStyle = strokeColor;
+        sbCtx.stroke();
+      }
+      
+      // Connections Groups -> Questions
+      sbNodes.questions.forEach(node => {
+        const group = sbNodes.groups[node.expert];
+        sbCtx.beginPath();
+        sbCtx.moveTo(group.x, group.y);
+        sbCtx.lineTo(node.x, node.y);
+        sbCtx.strokeStyle = strokeColor;
+        sbCtx.stroke();
+      });
+      
+      // Show Active Path
+      if (activeSbNode) {
+        const group = sbNodes.groups[activeSbNode.expert];
+        sbCtx.lineWidth = 2.5;
+        sbCtx.strokeStyle = accentColor;
+        sbCtx.shadowBlur = 6;
+        sbCtx.shadowColor = accentColor;
+        
+        sbCtx.beginPath();
+        sbCtx.moveTo(sbNodes.center.x, sbNodes.center.y);
+        sbCtx.lineTo(group.x, group.y);
+        sbCtx.lineTo(activeSbNode.x, activeSbNode.y);
+        sbCtx.stroke();
+        
+        sbCtx.shadowBlur = 0;
+      }
+      
+      // Central Node
+      sbCtx.beginPath();
+      sbCtx.arc(sbNodes.center.x, sbNodes.center.y, 22, 0, Math.PI * 2);
+      sbCtx.fillStyle = nodeFill;
+      sbCtx.strokeStyle = accentColor;
+      sbCtx.lineWidth = 2;
+      sbCtx.shadowBlur = activeSbNode ? 8 : 4;
+      sbCtx.shadowColor = accentColor;
+      sbCtx.fill();
+      sbCtx.stroke();
+      sbCtx.shadowBlur = 0;
+      
+      sbCtx.fillStyle = textColor;
+      sbCtx.font = '10px var(--font-mono)';
+      sbCtx.textAlign = 'center';
+      sbCtx.textBaseline = 'middle';
+      sbCtx.fillText('Router', sbNodes.center.x, sbNodes.center.y);
+      
+      // Expert Nodes
+      for (const [key, group] of Object.entries(sbNodes.groups)) {
+        const isActiveGroup = activeSbNode && activeSbNode.expert === key;
+        sbCtx.beginPath();
+        sbCtx.arc(group.x, group.y, 14, 0, Math.PI * 2);
+        sbCtx.fillStyle = nodeFill;
+        sbCtx.strokeStyle = isActiveGroup ? accentColor : 'rgba(0, 0, 0, 0.3)'; // neutral border
+        sbCtx.lineWidth = 1.5;
+        if (isActiveGroup) {
+          sbCtx.shadowBlur = 6;
+          sbCtx.shadowColor = accentColor;
+        }
+        sbCtx.fill();
+        sbCtx.stroke();
+        sbCtx.shadowBlur = 0;
+        
+        sbCtx.fillStyle = isActiveGroup ? textColor : '#666666'; // neutral label
+        sbCtx.font = '9px var(--font-mono)';
+        sbCtx.fillText(group.label, group.x, group.y);
+      }
+      
+      // Question Nodes
+      sbNodes.questions.forEach(node => {
+        const isHovered = hoveredSbNode && hoveredSbNode.id === node.id;
+        const isActive = activeSbNode && activeSbNode.id === node.id;
+        
+        sbCtx.beginPath();
+        let r = node.radius;
+        if (isHovered) r = 9;
+        if (isActive) r = 8;
+        
+        sbCtx.arc(node.x, node.y, r, 0, Math.PI * 2);
+        sbCtx.fillStyle = isActive ? accentColor : (isHovered ? '#e5e0db' : nodeFill);
+        sbCtx.strokeStyle = (isActive || isHovered) ? accentColor : 'rgba(0, 0, 0, 0.3)'; // neutral border
+        sbCtx.lineWidth = 1.5;
+        
+        if (isActive || isHovered) {
+          sbCtx.shadowBlur = 8;
+          sbCtx.shadowColor = accentColor;
+        }
+        sbCtx.fill();
+        sbCtx.stroke();
+        sbCtx.shadowBlur = 0;
+        
+        sbCtx.fillStyle = (isActive || isHovered) ? textColor : '#666666'; // neutral label
+        sbCtx.font = '8px var(--font-mono)';
+        
+        let labelText = node.label.split(' ')[1];
+        let textOffset = 12;
+        if (node.x < sbNodes.center.x) {
+          sbCtx.textAlign = 'right';
+          sbCtx.fillText(labelText, node.x - textOffset, node.y);
+        } else {
+          sbCtx.textAlign = 'left';
+          sbCtx.fillText(labelText, node.x + textOffset, node.y);
+        }
+      });
+      
+      // Particles
+      sbParticles = sbParticles.filter(p => {
+        const finished = p.update();
+        if (!finished) {
+          p.draw();
+        }
+        return !finished;
+      });
+      
+      // Explosions
+      sbExplosions = sbExplosions.filter(spark => {
+        const finished = spark.update();
+        if (!finished) {
+          spark.draw();
+        }
+        return !finished;
+      });
+      
+      sbAnimFrameId = requestAnimationFrame(animateSandboxLoop);
+    }
+
+    sbCanvas.addEventListener('mousemove', (e) => {
+      const rect = sbCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+      
+      let found = null;
+      for (const node of sbNodes.questions) {
+        const dist = Math.hypot(mouseX - node.x, mouseY - node.y);
+        if (dist <= 12) {
+          found = node;
+          break;
+        }
+      }
+      
+      hoveredSbNode = found;
+      const tooltip = document.getElementById('sandbox-tooltip');
+      if (found) {
+        sbCanvas.style.cursor = 'pointer';
+        tooltip.textContent = `${found.label}: ${found.q}`;
+      } else {
+        sbCanvas.style.cursor = 'default';
+        if (activeSbNode) {
+          tooltip.textContent = `Active: ${activeSbNode.q}`;
+        } else {
+          tooltip.textContent = 'Hover over a node to read the query. Clicking a node executes the neural network query and routes it to the active expert.';
+        }
+      }
+    });
+    
+    sbCanvas.addEventListener('click', (e) => {
+      const rect = sbCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+      
+      for (const node of sbNodes.questions) {
+        const dist = Math.hypot(mouseX - node.x, mouseY - node.y);
+        if (dist <= 12) {
+          triggerSandboxExecution(node);
+          break;
+        }
+      }
+    });
+
+    sbCanvas.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      const rect = sbCanvas.getBoundingClientRect();
+      const touch = e.touches[0];
+      const touchX = touch.clientX - rect.left;
+      const touchY = touch.clientY - rect.top;
+      
+      for (const node of sbNodes.questions) {
+        const dist = Math.hypot(touchX - node.x, touchY - node.y);
+        if (dist <= 20) {
+          triggerSandboxExecution(node);
+          break;
+        }
+      }
+    }, { passive: false });
+
+    sbCanvas.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      const rect = sbCanvas.getBoundingClientRect();
+      const touch = e.touches[0];
+      const touchX = touch.clientX - rect.left;
+      const touchY = touch.clientY - rect.top;
+      
+      let found = null;
+      for (const node of sbNodes.questions) {
+        const dist = Math.hypot(touchX - node.x, touchY - node.y);
+        if (dist <= 20) {
+          found = node;
+          break;
+        }
+      }
+      
+      hoveredSbNode = found;
+      const tooltip = document.getElementById('sandbox-tooltip');
+      if (found) {
+        tooltip.textContent = `${found.label}: ${found.q}`;
+      } else {
+        if (activeSbNode) {
+          tooltip.textContent = `Active: ${activeSbNode.q}`;
+        } else {
+          tooltip.textContent = 'Hover over a node to read the query. Clicking a node executes the neural network query and routes it to the active expert.';
+        }
+      }
+    }, { passive: false });
+
+    window.addEventListener('resize', () => {
+      if (isCanvasTabActive) {
+        initCanvas();
+        updateCoordinates();
+      }
+      initSandboxCanvas();
+      updateSandboxCoordinates();
+    });
+
+    // ----------------------------------------------------
+    // HTML5 CANVAS ROUTING ANIMATION ENGINE (Viewport-Independent relative coordinates)
+    // ----------------------------------------------------
+    const canvas = document.getElementById('routing-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let canvasWidth = 0;
+    let canvasHeight = 0;
+    let animFrameId = null;
+
+    let nodeCoordinates = {
+      router: { x: 0, y: 0 },
+      philosophy: { x: 0, y: 0 },
+      healthcare: { x: 0, y: 0 },
+      media: { x: 0, y: 0 },
+      finance: { x: 0, y: 0 },
+      business: { x: 0, y: 0 },
+      technology: { x: 0, y: 0 }
+    };
+
+    function initCanvas() {
+      const container = canvas.parentElement;
+      canvasWidth = container.clientWidth;
+      canvasHeight = container.clientHeight;
+      
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = canvasWidth * dpr;
+      canvas.height = canvasHeight * dpr;
+      canvas.style.width = canvasWidth + 'px';
+      canvas.style.height = canvasHeight + 'px';
+      
+      ctx.resetTransform();
+      ctx.scale(dpr, dpr);
+    }
+
+    function getElementCenter(el) {
+      const container = document.querySelector('.moe-visualizer');
+      if (!container) return { x: 0, y: 0 };
+      const containerRect = container.getBoundingClientRect();
+      const rect = el.getBoundingClientRect();
+      return {
+        x: rect.left - containerRect.left + rect.width / 2,
+        y: rect.top - containerRect.top + rect.height / 2
+      };
+    }
+
+    function updateCoordinates() {
+      const routerEl = document.getElementById('router-head');
+      if (!routerEl) return;
+      nodeCoordinates.router = getElementCenter(routerEl);
+      
+      expertCards.forEach(card => {
+        const id = card.dataset.expert;
+        nodeCoordinates[id] = getElementCenter(card);
+      });
+    }
+
+    class Particle {
+      constructor(startId, endId, color) {
+        this.startId = startId;
+        this.endId = endId;
+        this.t = 0;
+        this.speed = 0.025 + Math.random() * 0.025;
+        this.color = color || '#1a1a1a';
+        this.size = 2 + Math.random() * 3;
+      }
+
+      update() {
+        this.t += this.speed;
+        return this.t >= 1;
+      }
+
+      draw() {
+        const start = nodeCoordinates[this.startId];
+        const end = nodeCoordinates[this.endId];
+        if (!start || !end) return;
+
+        const cpX = (start.x + end.x) / 2;
+        const cpY = start.y;
+
+        const t = this.t;
+        // Quadratic Bezier Formula (Plan compliance)
+        const x = Math.pow(1 - t, 2) * start.x + 
+                  2 * (1 - t) * t * cpX + 
+                  Math.pow(t, 2) * end.x;
+                  
+        const y = Math.pow(1 - t, 2) * start.y + 
+                  2 * (1 - t) * t * cpY + 
+                  Math.pow(t, 2) * end.y;
+
+        ctx.beginPath();
+        ctx.arc(x, y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = this.color;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    function spawnParticlesFlow() {
+      let color = '#1a1a1a';
+      if (document.body.classList.contains('retro-matrix')) {
+        color = '#00ff44';
+      }
+
+      // Limit particle spawning to prevent lag
+      if (particles.length > 30) return;
+
+      for (let i = 0; i < 6; i++) {
+        setTimeout(() => {
+          if (isCanvasTabActive) {
+            particles.push(new Particle('router', activeExpertId, color));
+          }
+        }, i * 120);
+      }
+    }
+
+    function drawStaticTracks() {
+      const start = nodeCoordinates.router;
+      if (!start) return;
+
+      let strokeColor = 'rgba(148, 163, 184, 0.45)'; // High contrast slate-blue connections
+      if (document.body.classList.contains('retro-matrix')) {
+        strokeColor = 'rgba(0, 255, 68, 0.2)';
+      }
+
+      expertCards.forEach(card => {
+        const end = nodeCoordinates[card.dataset.expert];
+        if (!end) return;
+        const cpX = (start.x + end.x) / 2;
+        const cpY = start.y;
+
+        ctx.beginPath();
+        ctx.moveTo(start.x, start.y);
+        ctx.quadraticCurveTo(cpX, cpY, end.x, end.y);
+        ctx.strokeStyle = strokeColor;
+        ctx.lineWidth = 1.5;
+        
+        if (card.dataset.expert === activeExpertId) {
+          ctx.strokeStyle = document.body.classList.contains('retro-matrix') ? 'rgba(0, 255, 68, 0.7)' : 'rgba(0, 0, 0, 0.6)';
+          ctx.lineWidth = 2.5;
+          ctx.shadowBlur = 4;
+          ctx.shadowColor = ctx.strokeStyle;
+        }
+        
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+      });
+    }
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function animateLoop() {
+      if (!isCanvasTabActive) {
+        animFrameId = null;
+        return;
+      }
+
+      if (prefersReducedMotion.matches) {
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        drawStaticTracks();
+        animFrameId = requestAnimationFrame(animateLoop);
+        return;
+      }
+
+      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+      drawStaticTracks();
+
+      particles = particles.filter(p => {
+        const finished = p.update();
+        if (!finished) {
+          p.draw();
+        }
+        return !finished;
+      });
+
+      animFrameId = requestAnimationFrame(animateLoop);
+    }
+
+
+
+    // ----------------------------------------------------
+    // ACCESSIBILITY & UTILITIES (Copy-to-clipboard toast & deep linking)
+    // ----------------------------------------------------
+    function copyToClipboard(text, message) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(message);
+      }).catch(() => {
+        try {
+          const tempInput = document.createElement("input");
+          tempInput.style.position = "fixed";
+          tempInput.style.left = "-9999px";
+          tempInput.setAttribute("aria-hidden", "true");
+          tempInput.value = text;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          const success = document.execCommand("copy");
+          document.body.removeChild(tempInput);
+          showToast(success ? message : "Copy failed");
+        } catch (e) {
+          showToast("Copy failed");
+        }
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      toast.textContent = message;
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 2000);
+    }
+
+    // Contact Badges click & copy logic
+    document.getElementById('email-link').addEventListener('click', (e) => {
+      copyToClipboard('pedromanuelamaral@gmail.com', 'Email copied to clipboard!');
+    });
+    
+
+
+    // Deep Linking parser
+    function getHashParam(param) {
+      const hash = window.location.hash;
+      if (!hash) return null;
+      const params = new URLSearchParams(hash.substring(1));
+      return params.get(param);
+    }
+
+    const VALID_EXPERTS = ['philosophy', 'healthcare', 'media', 'finance', 'business', 'technology'];
+
+    function handleDeepLinking() {
+      const expertParam = getHashParam('expert');
+      if (expertParam && VALID_EXPERTS.includes(expertParam)) {
+        activateExpert(expertParam);
+      }
+      
+      // Conditional DeepSWE rendering checks
+      const deepSweRow = document.getElementById('deepswe-row');
+      const searchParams = new URLSearchParams(window.location.search);
+      const showDeepSwe = searchParams.get('deepswe') === 'true' || window.location.hash.includes('deepswe=true');
+      if (showDeepSwe && deepSweRow) {
+        deepSweRow.style.display = 'flex';
+      } else if (deepSweRow) {
+        deepSweRow.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('load', () => {
+      handleDeepLinking();
+    });
+
+    window.addEventListener('hashchange', () => {
+      handleDeepLinking();
+    });
+
+    // Preset tags keypress bindings
+    document.querySelectorAll('.preset-tag').forEach(tag => {
+      const handler = () => {
+        const query = tag.dataset.query;
+        const cleanQuery = cleanQueryKey(query);
+        const node = MINDMAP_NODES.find(n => cleanQuery.includes(n.key) || n.key.includes(cleanQuery));
+        if (node) {
+          document.getElementById('section-architecture').scrollIntoView({ behavior: 'smooth' });
+          triggerSandboxExecution(node);
+        }
+      };
+      
+      tag.addEventListener('click', () => {
+        document.querySelectorAll('.preset-tag').forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+        handler();
+      });
+      tag.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          document.querySelectorAll('.preset-tag').forEach(t => t.classList.remove('active'));
+          tag.classList.add('active');
+          handler();
+        }
+      });
+    });
+
+    // ----------------------------------------------------
+    // EASTER EGG: KONAMI CODE SCRIPT
+    // ----------------------------------------------------
+    const konamiCode = [
+      'arrowup', 'arrowup', 'arrowdown', 'arrowdown',
+      'arrowleft', 'arrowright', 'arrowleft', 'arrowright',
+      'b', 'a'
+    ];
+    let konamiIndex = 0;
+
+    window.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+      if (key === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) {
+          triggerRetroMatrix();
+          konamiIndex = 0;
+        }
+      } else {
+        konamiIndex = 0;
+      }
+    });
+
+    function triggerRetroMatrix() {
+      document.body.classList.toggle('retro-matrix');
+      writeToTerminal("[SYSTEM OVERWRITE] CRT GREEN MONITOR EMULATOR LOADED.\n[INFO] Background themes disabled. Matrix parameters active.\nRun 'query-model' to interact.");
+      if (isCanvasTabActive) {
+        initCanvas();
+        updateCoordinates();
+      }
+    }
+  </script>
+</body>
+</html>
