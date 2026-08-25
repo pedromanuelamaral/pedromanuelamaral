@@ -1,6 +1,6 @@
 # Pedro Amaral
 
-Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch ([more](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/READ-MORE.md)).
+Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch ([more](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/READ-MORE.md) | [cv](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/CV.md)).
 
 ## Timeline
 
