@@ -1,16 +1,15 @@
 # Pedro Amaral
 
-Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch ([more](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/READ-MORE.md) | [cv](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/CV.md)).
+Enthusiast of technology, arts, finance, philosophy, liberal arts, and building things. Shaped by the Steve Jobs urge to put a ding in the universe. Philosophy undergraduate, currently in Portugal. Built a digital media mental health & literature project from scratch ([cv](https://github.com/pedromanuelamaral/pedromanuelamaral/blob/main/CV.md)).
 
 ## Timeline
 
 <div align="left">
   
 [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat-square&logo=github)](https://github.com/pedromanuelamaral)
-[![Model-Card](https://img.shields.io/badge/Card-000000?style=flat-square&logo=html5)](https://pedromanuelamaral.github.io/pedromanuelamaral/)
 [![X.com](https://img.shields.io/badge/-000000?style=flat-square&logo=x)](https://x.com/thephiloinvest)
 [![Devpost](https://img.shields.io/badge/Devpost-000000?style=flat-square&logo=devpost)](https://devpost.com/pedromanuelamaral)
-[![Reads](https://img.shields.io/badge/Read-000000?style=flat-square&logo=substack)](https://substack.com/@pedromanuelamaral)
+[![Self-hosting](https://img.shields.io/badge/SelfHosting-000000?style=flat-square&logo=docker)](https://github.com/pedromanuelamaral/AI-Notebook)
 [![Discord](https://img.shields.io/badge/-000000?style=flat-square&logo=discord)](https://discord.com/users/1412836613142347887)
 [![Cinema](https://img.shields.io/badge/Cinema-000000?style=flat-square&logo=letterboxd)](https://letterboxd.com/Pedroamaral/)
 [![HuggingFace](https://img.shields.io/badge/-000000?style=flat-square&logo=huggingface)](https://huggingface.co/Pedroamaral)
@@ -24,16 +23,16 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 - **NEFilUM** (2025–2026): Elected President representing `Núcleo de Estudantes de Filosofia da Universidade do Minho` • [Web](https://nefilum.weebly.com)
 
 **AI Engineering:**
-- **Agent Lab:** Beginner AI Guide • [Repo](https://github.com/pedromanuelamaral/agent-lab) ‣ [Page](https://pedromanuelamaral.github.io/agent-lab/)
+- **Agent Lab** (Pre-Release): Beginner AI Guide • [Repo](https://github.com/pedromanuelamaral/agent-lab) ‣ [Page](https://pedromanuelamaral.github.io/agent-lab/)
 - **AI Notebook**: My Technology Notebook • [Repo](https://github.com/pedromanuelamaral/AI-Notebook)
-- **Arta** (Refining...): Private Art Curator with AI + Tools • [Repo](https://github.com/pedromanuelamaral/arta)
+- **Arta** (Pre-Release): Your Personal Art Curator with AI + Tools • [Repo](https://github.com/pedromanuelamaral/arta) ‣ [Page](https://pedromanuelamaral.github.io/arta/)
 - **Amaral Media Arq.** (Fine-tuning): +200 Archive of mental health & literary content + new features.
 - **Assist-OS** (Privately Refining)...
 - **Cosmopolitan** (Privately Refining)...
 - **Open Audio Protocol** (Building)...
 
 **Product / Research:**
-- **Mentally Here** (Building): Personal Physical + Mental Health Companion • [Repo](https://github.com/pedromanuelamaral/mentally-here)
+- **Mentally Here** (Pre-Release): Personal Physical + Mental Health Companion • [Repo](https://github.com/pedromanuelamaral/mentally-here)
 - **Study Buddy** (Fine-tuning): Personalised Studying and Tutoring.
 - **AI Cluster Simulator** (Building)...
 - **Financial Research:** Interactive Equity Research Report • [Repo](https://github.com/pedromanuelamaral/fusion-research) ‣ [Page](https://pedromanuelamaral.github.io/fusion-research/)
@@ -44,5 +43,6 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 - Learning [more about Technology](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8)
 - Self-hosting and Running Local Models
 - AI-Tech Events ([Luma](https://luma.com/user/pedroamaral) • [Cerebral Valley](https://cerebralvalley.ai/u/Pedroamaral20))
-    - Cerebras x Google Gemma 4 (June 28 - 24 Hours) - [see more](https://pedromanuelamaral.github.io/arta/)
+    - Cerebras x Google Gemma 4 (June 28 - 24 Hours) - [Page](https://pedromanuelamaral.github.io/AI-Notebook/2026-06-29_Cerebras-Hackathon.html)
     - Open AI Build Week (July 13-21)
+    - Nebius x NVIDIA Global AI Hackathon (August 26-October 30)
