@@ -24,7 +24,7 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 
 **AI Engineering:**
 - **Agent Lab** (Pre-Release): Beginner AI Guide • [Repo](https://github.com/pedromanuelamaral/agent-lab) ‣ [Page](https://pedromanuelamaral.github.io/agent-lab/)
-- **AI Notebook**: My Technology Notebook • [Repo](https://github.com/pedromanuelamaral/AI-Notebook)
+- **AI Research Hub**: My AI Agentic Framework • [Repo](https://github.com/pedromanuelamaral/AI-Research-Hub)
 - **Arta** (Pre-Release): Your Personal Art Curator with AI + Tools • [Repo](https://github.com/pedromanuelamaral/arta) ‣ [Page](https://pedromanuelamaral.github.io/arta/)
 - **Amaral Media Arq.** (Fine-tuning): +200 Archive of mental health & literary content + new features.
 - **Assist-OS** (Privately Refining)...
@@ -43,6 +43,6 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 - Learning [more about Technology](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8)
 - Self-hosting and Running Local Models
 - AI-Tech Events ([Luma](https://luma.com/user/pedroamaral) • [Cerebral Valley](https://cerebralvalley.ai/u/Pedroamaral20))
-    - Cerebras x Google Gemma 4 (June 28 - 24 Hours) - [Page](https://pedromanuelamaral.github.io/AI-Notebook/2026-06-29_Cerebras-Hackathon.html)
+    - Cerebras x Google Gemma 4 (June 28 - 24 Hours)
     - Open AI Build Week (July 13-21)
     - Nebius x NVIDIA Global AI Hackathon (August 26-October 30)
