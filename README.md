@@ -17,32 +17,27 @@ Enthusiast of technology, arts, finance, philosophy, liberal arts, and building 
 </div>
 
 **Previously:**
-- **Amaral Media** (2021–2025): Bootstrapped Digital Media Project founded in high school at 16. • [Instagram](https://www.instagram.com/amaralmediasite/) ‣ [RTP](https://www.rtp.pt/play/p6381/e695600/dois-dedos-de-conversa) • [Gerador](https://gerador.eu/amaral-media-por-um-mundo-melhor-atraves-da-educacao-e-literatura/) • [Uniarea](https://uniarea.com/um-passo-de-cada-vez-alcancando-objetivos-no-secundario/)
+- **Amaral Media** (2021–2025): Bootstrapped Digital Media Project founded in high school at 16. • [Instagram](https://www.instagram.com/amaralmediasite/) & [RTP](https://www.rtp.pt/play/p6381/e695600/dois-dedos-de-conversa) • [Gerador](https://gerador.eu/amaral-media-por-um-mundo-melhor-atraves-da-educacao-e-literatura/) • [Uniarea](https://uniarea.com/um-passo-de-cada-vez-alcancando-objetivos-no-secundario/)
 - **NIIEM** (2023): Media team and Speaker at events of `Núcleo de Investigação e Intervenção na Educação Emocional`.
 - **Sophie Seromenho Clinic** (2024–2025): Head of technology operations of the mental health clinic brand • [Web](https://sophieseromenho.pt)
 - **NEFilUM** (2025–2026): Elected President representing `Núcleo de Estudantes de Filosofia da Universidade do Minho` • [Web](https://nefilum.weebly.com)
 
-**AI Engineering:**
-- **Agent Lab** (Pre-Release): Beginner AI Guide • [Repo](https://github.com/pedromanuelamaral/agent-lab) ‣ [Page](https://pedromanuelamaral.github.io/agent-lab/)
-- **AI Research Hub**: My AI Agentic Framework • [Repo](https://github.com/pedromanuelamaral/AI-Research-Hub)
-- **Arta** (Pre-Release): Your Personal Art Curator with AI + Tools • [Repo](https://github.com/pedromanuelamaral/arta) ‣ [Page](https://pedromanuelamaral.github.io/arta/)
-- **Amaral Media Arq.** (Fine-tuning): +200 Archive of mental health & literary content + new features.
-- **Assist-OS** (Privately Refining)...
-- **Cosmopolitan** (Privately Refining)...
-- **Open Audio Protocol** (Building)...
-
-**Product / Research:**
-- **Mentally Here** (Pre-Release): Personal Physical + Mental Health Companion • [Repo](https://github.com/pedromanuelamaral/mentally-here)
-- **Study Buddy** (Fine-tuning): Personalised Studying and Tutoring.
-- **AI Cluster Simulator** (Building)...
-- **Financial Research:** Interactive Equity Research Report • [Repo](https://github.com/pedromanuelamaral/fusion-research) ‣ [Page](https://pedromanuelamaral.github.io/fusion-research/)
-- **Midterm-Singularity** (Privately Refining)...
-- **NEFilUM-v2** ...
+**Currently:**
+- **AI Research Hub**: AI Agentic Framework • [Code](https://github.com/pedromanuelamaral/AI-Research-Hub) • `AI Engineering` 
+- **Mentally Here**: Personal Health Companion • [Code](https://github.com/pedromanuelamaral/mentally-here) & [Page](https://pedromanuelamaral.github.io/mentally-here/Index.html) • `Product`
+- **Agent Lab**: AI Guide and Interactive Playground • [Code](https://github.com/pedromanuelamaral/agent-lab) & [Page](https://pedromanuelamaral.github.io/agent-lab/) • `AI Engineering`
+- **Fusion Research:** Interactive Equity and Macro Research Report • [Code](https://github.com/pedromanuelamaral/fusion-research) & [Page](https://pedromanuelamaral.github.io/fusion-research/) • `Research`
+- **Arta**: Your Personal Art Curator with AI + Tools • [Code](https://github.com/pedromanuelamaral/arta) & [Page](https://pedromanuelamaral.github.io/arta/) • `AI Engineering`
+- **Study Buddy** (Fine-tuning): Personalised Studying and Tutoring • `Product`
+- **Amaral Media Arq.** (Fine-tuning): Open Sourcing Mental Health Ed + Literary works + More • `Product`
+- **Assist-OS** (Privately Refining)…  `AI Engineering`
+- **Open Audio Protocol** (Building)… `AI Engineering`
+- **NEFilUM-v2** (Building)… `Product`
 
 **Side-quests on Cron:**
 - Learning [more about Technology](https://www.youtube.com/playlist?list=PLFDN0iKtqkF8)
 - Self-hosting and Running Local Models
 - AI-Tech Events ([Luma](https://luma.com/user/pedroamaral) • [Cerebral Valley](https://cerebralvalley.ai/u/Pedroamaral20))
-    - Cerebras x Google Gemma 4 (June 28 - 24 Hours)
+    - Cerebras x Google Gemma 4 (June 28 - 24 Hours) • [check](https://pedromanuelamaral.github.io/mentally-here/Index.html)
     - Open AI Build Week (July 13-21)
     - Nebius x NVIDIA Global AI Hackathon (August 26-October 30)
